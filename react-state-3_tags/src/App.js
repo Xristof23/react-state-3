@@ -10,8 +10,7 @@ export default function App() {
     setTags([...tagList, newTag]);
   }
   function handleDeleteTag(TagToDelete) {
-    // const TagToDelete = event.target.value;
-    const arrayAfterDelete = tagList.filter((tag) => tag !== TagToDelete);
+    const arrayAfterDelete = tags.filter((tag) => tag !== TagToDelete);
     setTags(arrayAfterDelete);
   }
 
